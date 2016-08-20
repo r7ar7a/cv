@@ -30,10 +30,10 @@
 \firstname{András}
 \familyname{Radnai}
 \title{Curriculum Vitae}               % optional, remove the line if not wanted
-\address{Hatvany Lajos utca 6}{1039 Budapest}    % optional, remove the line if not wanted
+\address{Béke tér 4}{1212 Budapest}{Hungary}    % optional, remove the line if not wanted
 \mobile{+36 30 589 8510}                    % optional, remove the line if not wanted
-\phone{+36 1 279 6119}                      % optional, remove the line if not wanted
-\email{radnai.andras@sztaki.mta.hu}                      % optional, remove the line if not wanted
+%\phone{+36 1 279 6119}                      % optional, remove the line if not wanted
+\email{r7ar7a@gmail.com}                      % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 \photo[84pt]{jokepkicsi.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{"Success is the ability to go from failure to failure without losing your enthusiasm." -- Winston Churchill}                 % optional, remove the line if not wanted
@@ -68,21 +68,27 @@
 %\cvline{Test tools}{JUnit, googletest, pytest}
 %\cvline{Web}{bottle, Tomcat, WebSocket, JavaScript, html}
 %\cvline{Miscellaneous}{Fuse(Filesystem in Userspace), jinja(template language), yaml} 
-\cvcomputer{Languages}{JAVA, C++, Python, bash, Groovy}{Platforms}{linux(mainly Debian, Ubuntu)}
-\cvcomputer{Build tools}{Gradle, SCons, CMake, Ant}{Devops tools}{Jenkins, Docker, Salt, Fabric, gitolite}
-\cvcomputer{IDEs}{Eclipse, Netbeans}{Test tools}{JUnit, googletest, pytest}
-\cvcomputer{Distributed platforms}{Hadoop, HDFS}{Web}{bottle, Tomcat, JavaScript, HTML, WebSocket}
-\cvcomputer{Miscellaneous}{Fuse (Filesystem in Userspace), Jinja2\,(template language), yaml}{}{}
+\cvcomputer{Languages}{Java, C++, Python, Bash, Groovy}
+  {Platforms}{Linux(mainly Debian, Ubuntu, Mint)}
+\cvcomputer{Build tools}{Gradle, SCons, CMake, Ant}
+  {Devops tools}{Jenkins, Docker, Salt, Fabric, Gitolite}
+\cvcomputer{IDEs}{Eclipse, Netbeans}
+  {Test tools}{JUnit, \href{https://github.com/google/googletest\#readme}{Googletest}, Pytest}
+\cvcomputer{Distributed platforms}{Hadoop, HDFS, Hive, Spark}
+  {Web}{\href{https://github.com/bottlepy/bottle\#readme}{Bottle}, Tomcat, JavaScript, HTML, WebSocket}
+\cvcomputer{Miscellaneous}{\href{https://en.wikipedia.org/wiki/Filesystem_in_Userspace}{Fuse}, \href{http://jinja.pocoo.org/docs/dev/}{Jinja2}, Yaml}{}{}
 %Section
 \section{Working Experience}
 %\subsection{Working}
-\cventry{2011-2015}{Software developer}{MTA SZTAKI}{Data Mining and Search Group}{}{Projects:
-\newline \emph{ARMADA} (2013 - ) -- extracting metadata (like author, title, references, authors of references, etc.) from articles. The input files are mostly scientific pdf articles, they could be OCR outputs.
+\cventry{2015-2016}{Java engineer}{Rapidminer}{Radoop}{}{Projects:
+\newline \emph{RADOOP} (2015 - 2016) -- The Rapidmier Radoop extension makes users able to easily adapt their predictive analytics workflow to Hadoop-based clusters.}
+\cventry{2011-2015}{Software engineer}{MTA SZTAKI}{Data Mining and Search Group}{}{Projects:
+\newline \emph{ARMADA} (2013 - 2015) -- Extracting metadata (like author, title, references, authors of references, etc.) from articles. The input files are mostly scientific pdf articles, they could be OCR outputs.
 \newline \emph{LAWA} (2012 - 2013) -- Longitudinal Analytics of Web Archive Data.
 The LAWA project aims to build an Internet-based experimental testbed for large-scale data
 analytics. % arguments 3 to 6 are optional
-\newline \emph{DEVOPS} (2012 - ) -- Installing and managing tools and scripts for continuous deployment} % arguments 3 to 6 are optional
-\cventry{2009-}{Software developer}{Semmelweis University}{Department of Medical Biochemistry}{}{Supported JAVA desktop application for store, edit and categorize exam questions and to generate test sheets. } % arguments 3 to 6 are optional
+\newline \emph{DEVOPS} (2012 - 2015) -- Installing and managing tools and scripts for continuous deployment} % arguments 3 to 6 are optional
+\cventry{2009-}{Software engineer}{Semmelweis University}{Department of Medical Biochemistry}{}{Supported JAVA desktop application for store, edit and categorize exam questions and to generate test sheets. } % arguments 3 to 6 are optional
 %\subsection{projects}
 %\cventry{start-end}{<Position Held>}{<Name of employer>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
 %\subsection{Academic}
@@ -92,9 +98,9 @@ analytics. % arguments 3 to 6 are optional
 
 %Section
 \section{Education}
-\cventry{2010-2014}{Master of Science(BSc), Mathematics}{Eötvös Loránd University}{Department of Computer Science}{}{The topic of my thesis: Approximation Algorithm for Stable Matching Problem. 
-We obtained some results in the case when preference lists contain ties.
-My supervisor was Zoltán Király}{} % arguments 3 to 6 are optional
+\cventry{2010-2014}{Master of Science(BSc), Mathematics}{Eötvös Loránd University}{Department of Computer Science}{}{My thesis is titled ``\href{https://www.cs.elte.hu/blobs/diplomamunkak/msc_mat/2014/radnai_andras.pdf}{Approximation Algorithm for the Stable Matching Problem}''. 
+We obtained some new results in the case when preference lists may contain ties.
+My supervisor was Zoltán Király.}{} % arguments 3 to 6 are optional
 \cventry{2007-2010}{Bachelor of Science(BSc), Mathematics}{Eötvös Loránd University}{Department of Computer Science}{}{}{} % arguments 3 to 6 are optional
 \cventry{2003-2007}{High school diploma}{Fazekas Mihály Grammar School}{branch of mathematics}{}{}{} % arguments 3 to 6 are optional
 
@@ -109,10 +115,10 @@ My supervisor was Zoltán Király}{} % arguments 3 to 6 are optional
 \cvline{hungarian}{\textit{native}}
 \cvline{english}{\textit{intermediate}}
 %Section
-\section{Publications}
-\cvline{}{L. Dudás, Zs. Fekete, J. Göbölös-Szabó, A. Radnai, Á. Salánki, A. Szabó, G. Szűcs:
-\emph{OWLAP -- using OLAP approach in anomaly detection} \newline
-IEEE Conference on Visual Analytics Science and Technology, Seattle, WA, USA, 2012}
+%\section{Publications}
+%\cvline{}{L. Dudás, Zs. Fekete, J. Göbölös-Szabó, A. Radnai, Á. Salánki, A. Szabó, G. Szűcs:
+%\emph{OWLAP -- using OLAP approach in anomaly detection} \newline
+%IEEE Conference on Visual Analytics Science and Technology, Seattle, WA, USA, 2012}
 %\hspace{25mm}\small Self-assessment European level \href{http://europass.cedefop.europa.eu/en/resources/european-language-levels-cefr}{CEFR} (C2 maximum evaluation)\normalsize
 %\vspace{5mm}
 
@@ -136,10 +142,10 @@ IEEE Conference on Visual Analytics Science and Technology, Seattle, WA, USA, 20
 %	\end{tabular}}
 
 %Section
-\section{Interests and Hobbies}
-\cvline{music}{\small violin, piano, guitar, bass guitar}
-\cvline{sports}{\small shaolin kung-fu, biking, ultimate frisbee, squash, football, basketball}
-\cvline{hobbies}{\small traveling, hitchhiking, hiking}
+%\section{Interests and Hobbies}
+%\cvline{music}{\small violin, piano, guitar, bass guitar}
+%\cvline{sports}{\small shaolin kung-fu, biking, ultimate frisbee, squash, football, basketball}
+%\cvline{hobbies}{\small traveling, hitchhiking, hiking}
 
 %Section
 %\section{Extra}

@@ -1,0 +1,159 @@
+%% start of file `moderncv_ntrp_template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+%
+% Modded by ntrp (nitropowered@gmail.com)
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[T1]{fontenc}
+% character encoding
+\usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
+\usepackage[english]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{\footnotesize } % other info in "inner" position of footer line
+
+% personal data
+\firstname{András}
+\familyname{Radnai}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Hatvany Lajos utca 6}{1039 Budapest}    % optional, remove the line if not wanted
+\mobile{+36 30 589 8510}                    % optional, remove the line if not wanted
+\phone{+36 1 279 6119}                      % optional, remove the line if not wanted
+\email{radnai.andras@sztaki.mta.hu}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[84pt]{jokepkicsi.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{"Success is the ability to go from failure to failure without losing your enthusiasm." -- Winston Churchill}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+%Section
+\section{Info}
+\cvline{Birth}{\small November 20, 1988 (Budapest)\normalsize}
+\cvline{Citizenship}{\small Hungarian\normalsize}
+\cvline{LinkedIn}{\small \url{https://hu.linkedin.com/pub/andr\%C3\%A1s-radnai/b3/808/53b}\normalsize}
+
+%Section
+%\section{Desidered employment and Skills}
+%\cvline{}{\Large <Desidered employment>}
+%\cvline{}{\small <Skills>}
+
+%Section
+\section{Computer Skills} 
+%\cvline{Languages}{JAVA, C++, Python, bash, groovy} 
+%\cvline{Platforms}{linux(mainly Debian, Ubuntu)}
+%\cvline{Build tools}{Gradle, SCons, cmake}
+%\cvline{Devops tools}{Docker, Salt, Fabric, git, gitolite}
+%\cvline{IDEs}{Eclipse, Netbeans}
+%\cvline{Test tools}{JUnit, googletest, pytest}
+%\cvline{Web}{bottle, Tomcat, WebSocket, JavaScript, html}
+%\cvline{Miscellaneous}{Fuse(Filesystem in Userspace), jinja(template language), yaml} 
+\cvcomputer{Languages}{JAVA, C++, Python, bash, Groovy}{Platforms}{linux(mainly Debian, Ubuntu)}
+\cvcomputer{Build tools}{Gradle, SCons, CMake, Ant}{Devops tools}{Jenkins, Docker, Salt, Fabric, gitolite}
+\cvcomputer{IDEs}{Eclipse, Netbeans}{Test tools}{JUnit, googletest, pytest}
+\cvcomputer{Distributed platforms}{Hadoop, HDFS}{Web}{bottle, Tomcat, JavaScript, HTML, WebSocket}
+\cvcomputer{Miscellaneous}{Fuse (Filesystem in Userspace), Jinja2\,(template language), yaml}{}{}
+%Section
+\section{Working Experience}
+%\subsection{Working}
+\cventry{2011-2015}{Software developer}{MTA SZTAKI}{Data Mining and Search Group}{}{Projects:
+\newline \emph{ARMADA} (2013 - ) -- extracting metadata (like author, title, references, authors of references, etc.) from articles. The input files are mostly scientific pdf articles, they could be OCR outputs.
+\newline \emph{LAWA} (2012 - 2013) -- Longitudinal Analytics of Web Archive Data.
+The LAWA project aims to build an Internet-based experimental testbed for large-scale data
+analytics. % arguments 3 to 6 are optional
+\newline \emph{DEVOPS} (2012 - ) -- Installing and managing tools and scripts for continuous deployment} % arguments 3 to 6 are optional
+\cventry{2009-}{Software developer}{Semmelweis University}{Department of Medical Biochemistry}{}{Supported JAVA desktop application for store, edit and categorize exam questions and to generate test sheets. } % arguments 3 to 6 are optional
+%\subsection{projects}
+%\cventry{start-end}{<Position Held>}{<Name of employer>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
+%\subsection{Academic}
+%\cventry{start-end}{<Brief Description>}{<Institution>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
+%\subsection{Various}
+%\cventry{start-end}{<Brief Description>}{<Institution>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
+
+%Section
+\section{Education}
+\cventry{2010-2014}{Master of Science(BSc), Mathematics}{Eötvös Loránd University}{Department of Computer Science}{}{The topic of my thesis: Approximation Algorithm for Stable Matching Problem. 
+We obtained some results in the case when preference lists contain ties.
+My supervisor was Zoltán Király}{} % arguments 3 to 6 are optional
+\cventry{2007-2010}{Bachelor of Science(BSc), Mathematics}{Eötvös Loránd University}{Department of Computer Science}{}{}{} % arguments 3 to 6 are optional
+\cventry{2003-2007}{High school diploma}{Fazekas Mihály Grammar School}{branch of mathematics}{}{}{} % arguments 3 to 6 are optional
+
+%Section
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+%Section
+\section{Languages}
+\cvline{hungarian}{\textit{native}}
+\cvline{english}{\textit{intermediate}}
+%Section
+\section{Publications}
+\cvline{}{L. Dudás, Zs. Fekete, J. Göbölös-Szabó, A. Radnai, Á. Salánki, A. Szabó, G. Szűcs:
+\emph{OWLAP -- using OLAP approach in anomaly detection} \newline
+IEEE Conference on Visual Analytics Science and Technology, Seattle, WA, USA, 2012}
+%\hspace{25mm}\small Self-assessment European level \href{http://europass.cedefop.europa.eu/en/resources/european-language-levels-cefr}{CEFR} (C2 maximum evaluation)\normalsize
+%\vspace{5mm}
+
+%\begin{tabular}{p{67mm} p{40mm} p{40mm} p{20mm}}
+%& \textbf{Understanding} & \textbf{Speaking} & \textbf{Writing} \\
+%\end{tabular}
+
+%\begin{tabular}{p{67mm} p{20mm} p{20mm} p{20mm} p{20mm} p{20mm}}
+%& Listening & Reading & Interaction & Production & \\
+%\end{tabular}
+
+%\vspace{3mm}
+%lvl should be in this range A1 < A2 < B1 < B2 < C1 < C2
+%\cvlanguage{<Lang 1>}{<Level>}{
+%	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+%		lvl & lvl & lvl & lvl & lvl
+%	\end{tabular}}
+%\cvlanguage{<Lang 2>}{<Level>}{
+%	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+%		lvl & lvl & lvl & lvl & lvl
+%	\end{tabular}}
+
+%Section
+\section{Interests and Hobbies}
+\cvline{music}{\small violin, piano, guitar, bass guitar}
+\cvline{sports}{\small shaolin kung-fu, biking, ultimate frisbee, squash, football, basketball}
+\cvline{hobbies}{\small traveling, hitchhiking, hiking}
+
+%Section
+%\section{Extra}
+%\cvline{<Extra Content>}{\small <Description>}
+%\small
+%\cvlistitem{\href{...}{<Eventual link>}}
+%\cvlistitem{\href{...}{<Eventual link>}}
+
+%\closesection{}                   % needed to renewcommands
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}

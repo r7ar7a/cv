@@ -1,47 +1,166 @@
 personal:
   firstname: ['András']
   familyname: ['Radnai']
-  address: ['Béke tér 4', '1212 Budapest', 'Hungary']
+  address: ['Béke tér 4', '1212 Budapest', {i18n: ['Hungary', 'Magyarország']}]
   mobile: ['+36 30 589 8510']
   phone: null
   email: ['r7ar7a@gmail.com']
   quote: null
 computer_skills:
-  - Languages:
-    - '\textbf{Java}': null
-    - 'Python': null
-    - 'C++': null
-    - 'Bash': null
-    - 'Groovy': null
-  - Platforms:
-    - 'Linux(mainly Debian, Ubuntu, Mint)': null
-  - Build tools:
-    - Gradle: 'https://gradle.org/'
-    - SCons: 'http://scons.org/'
-    - CMake: 'https://cmake.org/'
-  - Devops tools:
-    - Docker: 'http://www.docker.com'
-    - Jenkins: 'https://jenkins.io/'
-    - Salt: 'https://docs.saltstack.com/en/latest/'
-    - Fabric: 'http://www.fabfile.org/'
-    - Git-annex: 'https://git-annex.branchable.com/'
-    - Gitolite: 'http://gitolite.com/gitolite/'
-  - IDEs:
-    - Eclipse: null
-    - NetBeans: null
-  - Test tools:
-    - JUnit: 'https://github.com/junit-team/junit4'
-    - Googletest: 'https://github.com/google/googletest'
-    - Pytest: 'http://doc.pytest.org/en/latest/'
+  section_name: {i18n: ['Computer Skills', 'Szakmai Kompetencia']}
+  categories:
+  - i18n: ['Languages', 'Programnyelvek']
+    value:
+      - '\textbf{Java}': null
+      - 'Python': null
+      - 'C++': null
+      - 'Bash': null
+      - 'Groovy': null
+  - i18n: ['Platforms', 'Környezetek']
+    value:
+      - i18n: ['Linux(mainly Debian, Ubuntu, Mint)', 'Linux(főleg Debian, Ubuntu, Mint)']
+        value: null
+  - i18n: ['Build tools', 'Build eszközök']
+    value:
+      - Gradle: 'https://gradle.org/'
+      - SCons: 'http://scons.org/'
+      - CMake: 'https://cmake.org/'
+  - i18n: ['Devops tools', 'Devops eszközök']
+    value:
+      - Docker: 'http://www.docker.com'
+      - Jenkins: 'https://jenkins.io/'
+      - Salt: 'https://docs.saltstack.com/en/latest/'
+      - Fabric: 'http://www.fabfile.org/'
+      - Git-annex: 'https://git-annex.branchable.com/'
+      - Gitolite: 'http://gitolite.com/gitolite/'
+  - i18n: ['IDEs', 'IDE-k']
+    value:
+      - Eclipse: null
+      - NetBeans: null
+  - i18n: ['Test tools', 'Teszt eszközök']
+    value:
+      - JUnit: 'https://github.com/junit-team/junit4'
+      - Googletest: 'https://github.com/google/googletest'
+      - Pytest: 'http://doc.pytest.org/en/latest/'
   - Web:
     - Bottle: 'http://bottlepy.org'
     - WebSocket: 'https://en.wikipedia.org/wiki/WebSocket'
     - Tomcat: 'http://tomcat.apache.org/'
     - JavaScript: null
     - Html: null
-  - Miscellaneous:
-    - Fuse: 'https://en.wikipedia.org/wiki/Filesystem_in_Userspace'
-    - Jinja2: 'http://jinja.pocoo.org/docs/dev/'
-    - Yaml: 'http://yaml.org/'
-
+  - i18n: ['Miscellaneous', 'Vegyes']
+    value:
+      - Fuse: 'https://en.wikipedia.org/wiki/Filesystem_in_Userspace'
+      - Jinja2: 'http://jinja.pocoo.org/docs/dev/'
+      - Yaml: 'http://yaml.org/'
+work_experience:
+  section_name: {i18n:['Working Experience', 'Szakmai tapasztalat']}
+  jobs:
+    - desc:
+        company: 'Rapidminer'
+        group: ''
+        job: {i18n: ['Java developer', 'Java fejlesztő']}
+        date: '2015 -'
+      projects:
+        - Radoop:
+            date: '2015 -'
+            desc: 
+              i18n:
+                - 'Rapidminer Radoop helps users to easily adapt their predictive analytics workflow to Hadoop-based distributive systems.'
+                - 'TODO Rapidminer Radoop lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+            details:
+              - i18n:
+                - 'Implementation and support of features on a heterogen and quickly changing Hadoop environment with different versions from different vendors.'
+                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+              - i18n:
+                - 'Implementation of automated integration tests with different Hadoop environments and different configurations on Dockers and VMs.'
+                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+    - desc:
+        company: 'MTA SZTAKI'
+        group: {i18n: ['Data Mining and Search Group', 'Adatbányászat és Keresés Csoport']}
+        job: {i18n: ['Software developer', 'Szoftver fejlesztő']}
+        date: '2011 - 2015'
+      projects:
+        - Armada:
+            date: '2013 - 2015'
+            desc: 
+              i18n:
+                - 'Extracting metadata (like author, title, references, authors of references, etc.) from articles. The input files are mostly scientific pdf articles, they could be OCR outputs.'
+                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+            details:
+              - i18n:
+                - 'Web based annotation framework. Synchronized access to the annotation platform (through JavaScript, WebSocket) and FTP server (through Fuse filesystem iplementation).'
+                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+              - i18n:
+                - 'Ensurement of access to several machine learning algorithm for data prediction.'
+                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+              - i18n:
+                - 'Implementing Groovy DSL framework for a checkpointed and compact machine-learning parameterization.'
+                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+        - Lawa:
+            date: '2012 - 2013'
+            desc: 
+              i18n:
+                - 'Longitudinal Analytics of Web Archive Data. The LAWA project aims to build an Internet-based experimental testbed for large-scale data
+analytics.'
+                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+        - Devops:
+            date: '2012 - 2015'
+            desc: 
+              i18n: 
+                - 'Installing and managing tools and scripts for continuous deployment'
+                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+            details:
+              - i18n:
+                - 'Used technologies: Jenkins, Docker, Salt, Fabric, Gradle, Gitolite'
+                - 'Használt technológiák: Jenkins, Docker, Salt, Fabric, Gradle, Gitolite'
+    - desc:
+        company: {i18n: ['Semmelweis University', 'Semmelweis Egyetem']}
+        group: {i18n: ['Department of Medical Biochemistry', 'Adatbányászat és Keresés Csoport']}
+        job: {i18n: ['Software developer', 'Szoftver fejlesztő']}
+        date: '2009 -'
+      projects:
+        - TesztVK:
+            date: '2009 -'
+            desc: 
+              i18n: 
+                - 'Supported Java desktop application for store, edit and categorize exam questions and to generate test sheets.'
+                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+edutation:
+  section_name: {i18n: ['Edutation', 'Tanulmányok']}
+  periods:
+    - institution: {i18n: ['Eötvös Loránd University', 'Eötvös Loránd Tudományegyetem']}
+      degree: {i18n: ['Master of Science(MSc), Mathematics', 'Master of Science(MSc), Matematikus']}
+      department: {i18n: ['Department of Computer Science', 'Számítógéptudományi Tanszék']}
+      date: '2010 - 2014'
+      desc: 
+        i18n:
+          - >
+            My thesis is titled ``\href{https://www.cs.elte.hu/blobs/diplomamunkak/msc_mat/2014/radnai_andras.pdf}{Approximation Algorithm for the Stable Matching Problem}''. 
+            We obtained some new results in the case when preference lists may contain ties. 
+            My supervisor was Zoltán Király.
+          - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+    - institution: {i18n: ['Eötvös Loránd University', 'Eötvös Loránd Tudományegyetem']}
+      degree: {i18n: ['Bachelor of Science(BSc), Mathematics', 'Bachelor of Science(BSc), Matematikus']}
+      department: {i18n: ['Department of Computer Science', 'Számítógéptudományi Tanszék']}
+      date: '2007 - 2010'
+    - institution: {i18n: ['Fazekas Mihály Grammar School', 'Fazekas Mihály Gimnázium']}
+      degree: {i18n: ['High school diploma', 'Érettségi']}
+      department: {i18n: ['Branch of mathematics', 'Speciális matematika tagozat']}
+      date: '2003 - 2007'
+publications:
+  section_name: {i18n:['Publications', 'Publikációk']}
+  publications:
+    - authors: ['L. Dudás', 'Zs. Fekete', 'J. Göbölös-Szabó', 'A. Radnai', 'Á. Salánki', 'A. Szabó', 'G. Szűcs']
+      title: 'OWLAP -- using OLAP approach in anomaly detection'
+      conference: 'IEEE Conference on Visual Analytics Science and Technology, Seattle, WA, USA, 2012'
+languages:
+  section_name: {i18n:['Languages', 'Nyelvek']}
+  languages:
+    - i18n: ['hungarian', 'magyar']
+      value: {i18n: ['native', 'anyanyelv']}
+    - i18n: ['english', 'angol']
+      value: {i18n: ['intermediate', 'középfokú']}
+  
+      
 

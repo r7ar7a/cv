@@ -53,14 +53,9 @@
 \cvline{Citizenship}{\small Hungarian\normalsize}
 \cvline{LinkedIn}{\small \url{https://hu.linkedin.com/pub/andr\%C3\%A1s-radnai/b3/808/53b}\normalsize}
 
-%Section
-%\section{Desidered employment and Skills}
-%\cvline{}{\Large <Desidered employment>}
-%\cvline{}{\small <Skills>}
 
-
-\section{Computer Skills}
-{%- for category_dict in computer_skills %} {%- for category, item_list in category_dict.items() %}
+\section{{ '{' ~ computer_skills.section_name ~ '}' }}
+{%- for category_dict in computer_skills.categories %} {%- for category, item_list in category_dict.items() %}
   \cvline{{'{' ~ category ~ '}{'}}%
   {%- set comma = joiner(", ") %}
   {%- for item_dict in item_list %} {%- for item, href in item_dict.items() %}
@@ -74,66 +69,60 @@
   }
 {%- endfor %}{% endfor %}
 
+\section{{ '{' ~ work_experience.section_name ~ '}' }}
+{%- for job in work_experience.jobs %}
+  \cventry{{'{' ~ job.desc.date ~ '}{' ~ job.desc.job ~ '}{' ~
+      job.desc.company|upper ~ '}{' ~ job.desc.group ~ '}{}{'}}
+  {%- for project_dict in job.projects %}{%- for project, project_data in project_dict.items() %}
+    \emph{{'{' ~ project|upper ~ '}'}} ({{project_data.date}}) -- {{project_data.desc}}%
+    {%- if 'details' in project_data %}
+      \begin{itemize}
+        {%- for detail in project_data.details %}
+          \item {{detail}}%
+        {%- endfor %}
+      \end{itemize}
+    {%- else %}
+      \newline%
+    {%- endif %}
+  {%- endfor %}{% endfor %}
+  }
+{%- endfor %}
+
+\section{{ '{' ~ edutation.section_name ~ '}' }}
+{%- for period in edutation.periods %}
+  \cventry{{'{' ~ period.date ~ '}{' ~ period.degree ~ '}{' ~ period.institution ~ '}{' ~ period.department ~ '}{}{' ~ period.desc|default('') ~ '}'}}
+{%- endfor %}
+
+\section{{ '{' ~ publications.section_name ~ '}' }}
+{%- for publication in publications.publications %}
+  \cvline{{'{}{' ~ publication.authors|join(',') ~ ':\n\\emph{' ~ publication.title ~ '} \\newline%\n' ~
+      publication.conference}}
+  }
+{%- endfor %}
+
 %Section
-\section{Working Experience}
-%\subsection{Working}
-\cventry{2015 -}{Java developer}{RAPIDMINER}{}{}{Projects:
-\newline \emph{RADOOP} (2015 - ) -- Rapidminer Radoop helps users to easily adapt their predictive analytics workflow to Hadoop-based distributive systems.
-\begin{itemize}
-  \item Implementation and support of features on a heterogen and quickly changing Hadoop environment with different versions from different vendors.
-  \item Implementation of automated integration tests with different Hadoop environments and different configurations on Dockers and VMs. 
-\end{itemize}
-}
-\cventry{2011-2015}{Software developer}{MTA SZTAKI}{Data Mining and Search Group}{}{Projects:
-\newline \emph{ARMADA} (2013 - 2015) -- Extracting metadata (like author, title, references, authors of references, etc.) from articles. The input files are mostly scientific pdf articles, they could be OCR outputs.
-\begin{itemize}
-  \item Web based annotation framework. Synchronized access to the annotation platform (through JavaScript, WebSocket) and FTP server (through Fuse filesystem iplementation).
-  \item Ensurement of access to several machine learning algorithm for data prediction.
-  \item Implementing Groovy DSL framework for a checkpointed and compact machine-learning parameterization.
-\end{itemize}
-\emph{LAWA} (2012 - 2013) -- Longitudinal Analytics of Web Archive Data.
-The LAWA project aims to build an Internet-based experimental testbed for large-scale data
-analytics. % arguments 3 to 6 are optional
-\newline \emph{DEVOPS} (2012 - 2015) -- Installing and managing tools and scripts for continuous deployment % arguments 3 to 6 are optional
-\begin{itemize}
-  \item Used technologies: Jenkins,
-  \href{www.docker.com}{Docker},
-  \href{https://github.com/saltstack/salt\#readme}{Salt},
-  \href{http://www.fabfile.org/}{Fabric},
-  \href{https://gradle.org/}{Gradle},
-  \href{http://gitolite.com/gitolite/\#readme}{Gitolite}
-\end{itemize}}
-\cventry{2009 - }{Software developer}{Semmelweis University}{Department of Medical Biochemistry}{}{Supported Java desktop application for store, edit and categorize exam questions and to generate test sheets. } % arguments 3 to 6 are optional
+\section{{ '{' ~ languages.section_name ~ '}' }}
+{%- for language_dict in languages.languages %}{%- for language, level in language_dict.items() %}
+  \cvline{{'{' ~ language ~ '}{' ~ level ~ '}'}}
+{%- endfor %}{% endfor %}
+
+%\section{Desidered employment and Skills}
+%\cvline{}{\Large <Desidered employment>}
+%\cvline{}{\small <Skills>}
+
 %\subsection{projects}
 %\cventry{start-end}{<Position Held>}{<Name of employer>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
+
 %\subsection{Academic}
 %\cventry{start-end}{<Brief Description>}{<Institution>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
+
 %\subsection{Various}
 %\cventry{start-end}{<Brief Description>}{<Institution>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
 
-%Section
-\section{Education}
-\cventry{2010-2014}{Master of Science(BSc), Mathematics}{Eötvös Loránd University}{Department of Computer Science}{}{My thesis is titled ``\href{https://www.cs.elte.hu/blobs/diplomamunkak/msc_mat/2014/radnai_andras.pdf}{Approximation Algorithm for the Stable Matching Problem}''. 
-We obtained some new results in the case when preference lists may contain ties.
-My supervisor was Zoltán Király.}{} % arguments 3 to 6 are optional
-\cventry{2007-2010}{Bachelor of Science(BSc), Mathematics}{Eötvös Loránd University}{Department of Computer Science}{}{}{} % arguments 3 to 6 are optional
-\cventry{2003-2007}{High school diploma}{Fazekas Mihály Grammar School}{branch of mathematics}{}{}{} % arguments 3 to 6 are optional
-
-\section{Publications}
-\cvline{}{L. Dudás, Zs. Fekete, J. Göbölös-Szabó, A. Radnai, Á. Salánki, A. Szabó, G. Szűcs:
-\emph{OWLAP -- using OLAP approach in anomaly detection} \newline
-IEEE Conference on Visual Analytics Science and Technology, Seattle, WA, USA, 2012}
-%Section
 %\section{Master thesis}
 %\cvline{title}{\emph{Title}}
 %\cvline{supervisors}{Supervisors}
 %\cvline{description}{\small Short thesis abstract}
-
-%Section
-\section{Languages}
-\cvline{hungarian}{\textit{native}}
-\cvline{english}{\textit{intermediate}}
-%Section
 
 %%\hspace{25mm}\small Self-assessment European level \href{http://europass.cedefop.europa.eu/en/resources/european-language-levels-cefr}{CEFR} (C2 maximum evaluation)\normalsize
 %\vspace{5mm}

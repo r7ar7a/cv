@@ -1,0 +1,47 @@
+personal:
+  firstname: ['András']
+  familyname: ['Radnai']
+  address: ['Béke tér 4', '1212 Budapest', 'Hungary']
+  mobile: ['+36 30 589 8510']
+  phone: null
+  email: ['r7ar7a@gmail.com']
+  quote: null
+computer_skills:
+  - Languages:
+    - '\textbf{Java}': null
+    - 'Python': null
+    - 'C++': null
+    - 'Bash': null
+    - 'Groovy': null
+  - Platforms:
+    - 'Linux(mainly Debian, Ubuntu, Mint)': null
+  - Build tools:
+    - Gradle: 'https://gradle.org/'
+    - SCons: 'http://scons.org/'
+    - CMake: 'https://cmake.org/'
+  - Devops tools:
+    - Docker: 'http://www.docker.com'
+    - Jenkins: 'https://jenkins.io/'
+    - Salt: 'https://docs.saltstack.com/en/latest/'
+    - Fabric: 'http://www.fabfile.org/'
+    - Git-annex: 'https://git-annex.branchable.com/'
+    - Gitolite: 'http://gitolite.com/gitolite/'
+  - IDEs:
+    - Eclipse: null
+    - NetBeans: null
+  - Test tools:
+    - JUnit: 'https://github.com/junit-team/junit4'
+    - Googletest: 'https://github.com/google/googletest'
+    - Pytest: 'http://doc.pytest.org/en/latest/'
+  - Web:
+    - Bottle: 'http://bottlepy.org'
+    - WebSocket: 'https://en.wikipedia.org/wiki/WebSocket'
+    - Tomcat: 'http://tomcat.apache.org/'
+    - JavaScript: null
+    - Html: null
+  - Miscellaneous:
+    - Fuse: 'https://en.wikipedia.org/wiki/Filesystem_in_Userspace'
+    - Jinja2: 'http://jinja.pocoo.org/docs/dev/'
+    - Yaml: 'http://yaml.org/'
+
+

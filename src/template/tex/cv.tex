@@ -27,16 +27,14 @@
 \fancyfoot[RE,LO]{\footnotesize } % other info in "inner" position of footer line
 
 % personal data
-\firstname{András}
-\familyname{Radnai}
-\title{Curriculum Vitae}               % optional, remove the line if not wanted
-\address{Béke tér 4}{1212 Budapest}{Hungary}    % optional, remove the line if not wanted
-\mobile{+36 30 589 8510}                    % optional, remove the line if not wanted
-%\phone{+36 1 279 6119}                      % optional, remove the line if not wanted
-\email{r7ar7a@gmail.com}                      % optional, remove the line if not wanted
-%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
-%%PC_COMMENT%%\photo[84pt]{jokepkicsi.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-%\quote{"Success is the ability to go from failure to failure without losing your enthusiasm." -- Winston Churchill}                 % optional, remove the line if not wanted
+{%- for type, data_args in personal.items() %}
+  {%- if data_args %}
+    \{{type}}{%- for data in data_args -%}{{'{' ~ data ~ '}'}}{%- endfor -%}
+  {% endif -%}
+{% endfor %}
+{% if not pc %}
+  \photo[84pt]{jokepkicsi.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+{% endif %}
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -49,7 +47,9 @@
 
 %Section
 \section{Info}
-%%PC_COMMENT%%\cvline{Birth}{\small November 20, 1988 (Budapest)\normalsize}
+{% if not pc %}
+  \cvline{Birth}{\small November 20, 1988 (Budapest)\normalsize}
+{% endif %}
 \cvline{Citizenship}{\small Hungarian\normalsize}
 \cvline{LinkedIn}{\small \url{https://hu.linkedin.com/pub/andr\%C3\%A1s-radnai/b3/808/53b}\normalsize}
 
@@ -58,48 +58,22 @@
 %\cvline{}{\Large <Desidered employment>}
 %\cvline{}{\small <Skills>}
 
-%Section
-\section{Computer Skills} 
-\cvline{Languages}{
-  \textbf{Java}, Python, C++, Bash, Groovy
-}
-\cvline{Platforms}{
-  Linux(mainly Debian, Ubuntu, Mint)
-}
-\cvline{Build tools}{
-  \href{https://gradle.org/}{Gradle}%
-  , \href{http://scons.org/}{SCons}%
-  , \href{https://cmake.org/}{CMake}%
-}
-\cvline{Devops tools}{
-  \href{www.docker.com}{Docker}%
-  , \href{https://jenkins.io/}{Jenkins}%
-  , \href{https://docs.saltstack.com/en/latest/}{Salt}%
-  , \href{http://www.fabfile.org/}{Fabric}%
-  , \href{https://git-annex.branchable.com/}{Git-annex}%
-  , \href{http://gitolite.com/gitolite/}{Gitolite}%
-}
-\cvline{IDEs}{
-  Eclipse%
-  , NetBeans%
-}
-\cvline{Test tools}{
-  \href{https://github.com/junit-team/junit4}{JUnit}%
-  , \href{https://github.com/google/googletest}{Googletest}%
-  , \href{http://doc.pytest.org/en/latest/}{Pytest}
-}
-\cvline{Web}{
-  \href{http://bottlepy.org}{Bottle}%
-  , \href{https://en.wikipedia.org/wiki/WebSocket}{WebSocket}%
-  , \href{http://tomcat.apache.org/}{Tomcat}%
-  , JavaScript%
-  , Html%
-}
-\cvline{Miscellaneous}{
-  \href{https://en.wikipedia.org/wiki/Filesystem_in_Userspace}{Fuse}%
-  , \href{http://jinja.pocoo.org/docs/dev/}{Jinja2}%
-  , \href{http://yaml.org/}{Yaml}%
-}
+
+\section{Computer Skills}
+{%- for category_dict in computer_skills %} {%- for category, item_list in category_dict.items() %}
+  \cvline{{'{' ~ category ~ '}{'}}%
+  {%- set comma = joiner(", ") %}
+  {%- for item_dict in item_list %} {%- for item, href in item_dict.items() %}
+    {{ comma() }}
+    {%- if href -%}
+      \href{{'{' ~ href ~ '}'}}{{'{' ~ item ~ '}'}}%
+    {%- else -%}
+      {{item}}%
+    {%- endif -%}
+  {%- endfor %}{% endfor %}
+  }
+{%- endfor %}{% endfor %}
+
 %Section
 \section{Working Experience}
 %\subsection{Working}

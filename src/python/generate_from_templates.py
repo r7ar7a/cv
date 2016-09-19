@@ -1,4 +1,5 @@
 import yaml
+from copy import deepcopy
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 import sys
 import os
@@ -23,31 +24,28 @@ def select_lang(cfg, n):
   for _, v in get_iterator():
     select_lang(v, n)
 
-      
-
-  
-
 def main():
   from_dir, to_dir, cfg_file = sys.argv[1:]
   env = Environment(loader = FileSystemLoader(from_dir), undefined=StrictUndefined)
 
 
   with open(cfg_file, 'r') as f:
-    cfg = yaml.load(f)
-  select_lang(cfg, 0)
-  print(cfg['languages'])
+    orig_cfg = yaml.load(f)
 
+  for postfix, version in orig_cfg['versions'].items():
+    cfg = deepcopy(orig_cfg)
+    lang_index = cfg['langs'].index(version['lang'])
+    select_lang(cfg, lang_index)
+    cfg['pc'] = version['pc']
 
+    try:
+      os.makedirs(os.path.join(to_dir, 'tex'))
+    except FileExistsError as e:
+      pass  # We only want to ensure that it exists
 
-
-  try:
-    os.makedirs(os.path.join(to_dir, 'tex'))
-  except FileExistsError as e:
-    pass  # We only want to ensure that it exists
-
-  generated = env.get_template(os.path.join('tex', 'cv.tex')).render(pc=False, **cfg)
-  with open(os.path.join(to_dir, 'tex', 'cv_npc.tex'), 'w') as f:
-    f.write(generated)
+    generated = env.get_template(os.path.join('tex', 'cv.tex')).render(**cfg)
+    with open(os.path.join(to_dir, 'tex', 'cv_{}.tex'.format(postfix)), 'w') as f:
+      f.write(generated)
 
     
 

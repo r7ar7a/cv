@@ -1,3 +1,10 @@
+langs:
+  - en
+  - hu
+versions:
+  hu: {lang: 'hu', pc: False}
+  en: {lang: 'en', pc: False}
+  en_pc: {lang: 'en', pc: True}
 personal:
   firstname: ['András']
   familyname: ['Radnai']
@@ -71,7 +78,7 @@ work_experience:
             details:
               - i18n:
                 - 'Implementation and support of features on a heterogen and quickly changing Hadoop environment with different versions from different vendors.'
-                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+                - 'TODO.'
               - i18n:
                 - 'Implementation of automated integration tests with different Hadoop environments and different configurations on Dockers and VMs.'
                 - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
@@ -86,30 +93,30 @@ work_experience:
             desc: 
               i18n:
                 - 'Extracting metadata (like author, title, references, authors of references, etc.) from articles. The input files are mostly scientific pdf articles, they could be OCR outputs.'
-                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+                - 'Metaadatok kinyerése cikkekből (mint szerző, cím, hivatkozások, azok szerzői, stb.). Az input fájlok főleg pdf formátumú tudományos cikkek, esetleg OCR kimenetek.'
             details:
               - i18n:
-                - 'Web based annotation framework. Synchronized access to the annotation platform (through JavaScript, WebSocket) and FTP server (through Fuse filesystem iplementation).'
-                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+                - 'Web based annotation framework. Synchronized access to the annotation platform (through JavaScript, WebSocket) and FTP server (through Fuse filesystem implementation).'
+                - 'Webes alapú annotációs rendszer. Szinkronizált hozzáférés biztosítása az annotációs platformhoz (JavaScript, WebSocket segítségével) és FTP szerverhez (Fuse fájlrendszer implementációval).'
               - i18n:
-                - 'Ensurement of access to several machine learning algorithm for data prediction.'
-                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+                - 'Ensurement of access to several machine learning algorithms for data prediction.'
+                - 'Elérés biztosítása számos tanuló algoritmushoz az adatok jóslására.'
               - i18n:
                 - 'Implementing Groovy DSL framework for a checkpointed and compact machine-learning parameterization.'
-                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+                - 'Groovy DSL keretrendszer implementálása az algoritmusok paraméterezésére és futás közbeni ellenőrző pontok létrehozására.'
         - Lawa:
             date: '2012 - 2013'
             desc: 
               i18n:
                 - 'Longitudinal Analytics of Web Archive Data. The LAWA project aims to build an Internet-based experimental testbed for large-scale data
 analytics.'
-                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+                - 'Longitudinal Analytics of Web Archive Data. A LAWA projekt célja egy internet-alapú kísérleti rendszer kialakítása nagy mennyiségű adat kényelmes elemzésére'
         - Devops:
             date: '2012 - 2015'
             desc: 
               i18n: 
                 - 'Installing and managing tools and scripts for continuous deployment'
-                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+                - 'Eszközök és szkriptek installálása és karbantartása TODO'
             details:
               - i18n:
                 - 'Used technologies: Jenkins, Docker, Salt, Fabric, Gradle, Gitolite'
@@ -127,7 +134,7 @@ analytics.'
                 - 'Supported Java desktop application for store, edit and categorize exam questions and to generate test sheets.'
                 - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
 edutation:
-  section_name: {i18n: ['Edutation', 'Tanulmányok']}
+  section_name: {i18n: ['Education', 'Tanulmányok']}
   periods:
     - institution: {i18n: ['Eötvös Loránd University', 'Eötvös Loránd Tudományegyetem']}
       degree: {i18n: ['Master of Science(MSc), Mathematics', 'Master of Science(MSc), Matematikus']}
@@ -161,6 +168,4 @@ languages:
       value: {i18n: ['native', 'anyanyelv']}
     - i18n: ['english', 'angol']
       value: {i18n: ['intermediate', 'középfokú']}
-  
-      
 

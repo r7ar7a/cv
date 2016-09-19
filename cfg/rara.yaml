@@ -16,7 +16,7 @@ personal:
 computer_skills:
   section_name: {i18n: ['Computer Skills', 'Szakmai Kompetencia']}
   categories:
-  - i18n: ['Languages', 'Programnyelvek']
+  - i18n: ['Languages', 'Nyelvek']
     value:
       - '\textbf{Java}': null
       - 'Python': null
@@ -74,14 +74,14 @@ work_experience:
             desc: 
               i18n:
                 - 'Rapidminer Radoop helps users to easily adapt their predictive analytics workflow to Hadoop-based distributive systems.'
-                - 'TODO Rapidminer Radoop lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+                - 'A Rapidminer Radoop segít abban, hogy használói a prediktív analitikai munkafolyamatukat könnyen adaptálják Hadoop alapú elosztott rendszerekre.'
             details:
               - i18n:
                 - 'Implementation and support of features on a heterogen and quickly changing Hadoop environment with different versions from different vendors.'
-                - 'TODO.'
+                - 'Különböző komponensek megvalósítása és támogatása egy heterogén és gyorsan változó Hadoop környezeten különböző verziókkal különböző cégektől.'
               - i18n:
                 - 'Implementation of automated integration tests with different Hadoop environments and different configurations on Dockers and VMs.'
-                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+                - 'Automatizált integrációs tesztek megvalósítása különböző Hadoop környezeteken, különböző konfigurációkkal virtuális gépeken és Docker konténereken.'
     - desc:
         company: 'MTA SZTAKI'
         group: {i18n: ['Data Mining and Search Group', 'Adatbányászat és Keresés Csoport']}
@@ -116,14 +116,14 @@ analytics.'
             desc: 
               i18n: 
                 - 'Installing and managing tools and scripts for continuous deployment'
-                - 'Eszközök és szkriptek installálása és karbantartása TODO'
+                - 'A rendszer folyamatos szállítását elősegítő eszközök és szkriptek telepítése és karbantartása'
             details:
               - i18n:
                 - 'Used technologies: Jenkins, Docker, Salt, Fabric, Gradle, Gitolite'
                 - 'Használt technológiák: Jenkins, Docker, Salt, Fabric, Gradle, Gitolite'
     - desc:
         company: {i18n: ['Semmelweis University', 'Semmelweis Egyetem']}
-        group: {i18n: ['Department of Medical Biochemistry', 'Adatbányászat és Keresés Csoport']}
+        group: {i18n: ['Department of Medical Biochemistry', 'Orvosi Biokémiai Intézet']}
         job: {i18n: ['Software developer', 'Szoftver fejlesztő']}
         date: '2009 -'
       projects:
@@ -131,9 +131,9 @@ analytics.'
             date: '2009 -'
             desc: 
               i18n: 
-                - 'Supported Java desktop application for store, edit and categorize exam questions and to generate test sheets.'
-                - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
-edutation:
+                - ‘Developing and Supporting a Java desktop application for storing, editing, and categorizing exam questions and for generating test sheets.’
+                - 'Vizsgakérdések tárolását, szerkesztését és kategorizálását, valamint vizsgafeladatsorok készítését végző Java asztali alkalmazás fejlesztése és támogatása.'
+education:
   section_name: {i18n: ['Education', 'Tanulmányok']}
   periods:
     - institution: {i18n: ['Eötvös Loránd University', 'Eötvös Loránd Tudományegyetem']}
@@ -146,7 +146,10 @@ edutation:
             My thesis is titled ``\href{https://www.cs.elte.hu/blobs/diplomamunkak/msc_mat/2014/radnai_andras.pdf}{Approximation Algorithm for the Stable Matching Problem}''. 
             We obtained some new results in the case when preference lists may contain ties. 
             My supervisor was Zoltán Király.
-          - 'TODO lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.'
+          - >
+            Diplomamunkám címe ``\href{https://www.cs.elte.hu/blobs/diplomamunkak/msc_mat/2014/radnai_andras.pdf}{Approximációs Algoritmusok a Stabil Párosítás Problémára}''.
+            Új eredményeket értünk el abban az esetben, amelyben a preferencialisták egyenlőségeket is tartalmazhatnak.
+            Konzulensem Király Zoltán volt.
     - institution: {i18n: ['Eötvös Loránd University', 'Eötvös Loránd Tudományegyetem']}
       degree: {i18n: ['Bachelor of Science(BSc), Mathematics', 'Bachelor of Science(BSc), Matematikus']}
       department: {i18n: ['Department of Computer Science', 'Számítógéptudományi Tanszék']}
@@ -168,4 +171,3 @@ languages:
       value: {i18n: ['native', 'anyanyelv']}
     - i18n: ['english', 'angol']
       value: {i18n: ['intermediate', 'középfokú']}
-

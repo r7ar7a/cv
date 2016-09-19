@@ -5,7 +5,6 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 %
-% Modded by ntrp (nitropowered@gmail.com)
 
 \documentclass[11pt,a4paper]{moderncv}
 
@@ -88,8 +87,8 @@
   }
 {%- endfor %}
 
-\section{{ '{' ~ edutation.section_name ~ '}' }}
-{%- for period in edutation.periods %}
+\section{{ '{' ~ education.section_name ~ '}' }}
+{%- for period in education.periods %}
   \cventry{{'{' ~ period.date ~ '}{' ~ period.degree ~ '}{' ~ period.institution ~ '}{' ~ period.department ~ '}{}{' ~ period.desc|default('') ~ '}'}}
 {%- endfor %}
 

@@ -131,7 +131,7 @@ analytics.'
             date: '2009 -'
             desc: 
               i18n: 
-                - ‘Developing and Supporting a Java desktop application for storing, editing, and categorizing exam questions and for generating test sheets.’
+                - 'Developing and Supporting a Java desktop application for storing, editing, and categorizing exam questions and for generating test sheets.'
                 - 'Vizsgakérdések tárolását, szerkesztését és kategorizálását, valamint vizsgafeladatsorok készítését végző Java asztali alkalmazás fejlesztése és támogatása.'
 education:
   section_name: {i18n: ['Education', 'Tanulmányok']}

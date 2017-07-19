@@ -13,71 +13,45 @@ personal:
   phone: null
   email: ['r7ar7a@gmail.com']
   quote: null
-computer_skills:
-  section_name: {i18n: ['Computer Skills', 'Szakmai Kompetencia']}
-  categories:
-  - i18n: ['Languages', 'Nyelvek']
-    value:
-      - '\textbf{Java}': null
-      - 'Python': null
-      - 'C++': null
-      - 'Bash': null
-      - 'Groovy': null
-  - i18n: ['Platforms', 'Környezetek']
-    value:
-      - i18n: ['Linux(mainly Debian, Ubuntu, Mint)', 'Linux(főleg Debian, Ubuntu, Mint)']
-        value: null
-  - i18n: ['Build tools', 'Build eszközök']
-    value:
-      - Gradle: 'https://gradle.org/'
-      - SCons: 'http://scons.org/'
-      - CMake: 'https://cmake.org/'
-  - i18n: ['Devops tools', 'Devops eszközök']
-    value:
-      - Docker: 'http://www.docker.com'
-      - Jenkins: 'https://jenkins.io/'
-      - Salt: 'https://docs.saltstack.com/en/latest/'
-      - Fabric: 'http://www.fabfile.org/'
-      - Git-annex: 'https://git-annex.branchable.com/'
-      - Gitolite: 'http://gitolite.com/gitolite/'
-  - i18n: ['IDEs', 'IDE-k']
-    value:
-      - Eclipse: null
-      - NetBeans: null
-  - i18n: ['Test tools', 'Teszt eszközök']
-    value:
-      - JUnit: 'https://github.com/junit-team/junit4'
-      - Googletest: 'https://github.com/google/googletest'
-      - Pytest: 'http://doc.pytest.org/en/latest/'
-  - Web:
-    - Bottle: 'http://bottlepy.org'
-    - WebSocket: 'https://en.wikipedia.org/wiki/WebSocket'
-    - Tomcat: 'http://tomcat.apache.org/'
-    - JavaScript: null
-    - Html: null
-  - i18n: ['Miscellaneous', 'Vegyes']
-    value:
-      - Fuse: 'https://en.wikipedia.org/wiki/Filesystem_in_Userspace'
-      - Jinja2: 'http://jinja.pocoo.org/docs/dev/'
-      - Yaml: 'http://yaml.org/'
+
 work_experience:
   section_name: {i18n:['Working Experience', 'Szakmai tapasztalat']}
   jobs:
     - desc:
+        company: 'Gitential / Lensa'
+        group: ''
+        job: {i18n: ['Software developer / Data scientist', 'Szoftver fejlesztő / Data scientist']}
+        date: '2016 -'
+      projects:
+        - Gitential:
+            date: '2016 -'
+            desc: 
+              'Gitential is a tool that aims to give insights into the performance of developer teams.'
+            details:
+              - 'Finding of objective and meaningful statistics of developer teams based on the produced code basis.'
+              - 'Creation of graphs, so the causes of performance issues can be easily interpreted by non-technical users.'
+        - Lensa:
+            date: '2016 - 2017'
+            desc: 
+              'Lensa is a quickly growing job recommendation system for the job Market of the US.'
+            details:
+              - 'Construction of good quality similarity measurement for job descriptions.'
+              - 'Optimization of algorithms so they can select the relevant jobs for a user in milliseconds from 50 million possibility.'
+    - desc:
         company: 'Rapidminer'
         group: ''
         job: {i18n: ['Java developer', 'Java fejlesztő']}
-        date: '2015 -'
+        date: '2015 - 2016'
       projects:
         - Radoop:
-            date: '2015 -'
+            date: '2015 - 2016'
             desc: 
               i18n:
                 - 'Rapidminer Radoop helps users to easily adapt their predictive analytics workflow to Hadoop-based distributive systems.'
                 - 'A Rapidminer Radoop segít abban, hogy használói a prediktív analitikai munkafolyamatukat könnyen adaptálják Hadoop alapú elosztott rendszerekre.'
             details:
               - i18n:
-                - 'Implementation and support of features on a heterogen and quickly changing Hadoop environment with different versions from different vendors.'
+                - 'Implementation and support of features on a heterogeneous and quickly changing Hadoop environment with different versions from different vendors.'
                 - 'Különböző komponensek megvalósítása és támogatása egy heterogén és gyorsan változó Hadoop környezeten különböző verziókkal különböző cégektől.'
               - i18n:
                 - 'Implementation of automated integration tests with different Hadoop environments and different configurations on Dockers and VMs.'
@@ -133,6 +107,53 @@ analytics.'
               i18n: 
                 - 'Developing and Supporting a Java desktop application for storing, editing, and categorizing exam questions and for generating test sheets.'
                 - 'Vizsgakérdések tárolását, szerkesztését és kategorizálását, valamint vizsgafeladatsorok készítését végző Java asztali alkalmazás fejlesztése és támogatása.'
+computer_skills:
+  section_name: {i18n: ['Computer Skills', 'Szakmai Kompetencia']}
+  categories:
+  - i18n: ['Languages', 'Nyelvek']
+    value:
+      - '\textbf{C++}': null
+      - 'Java': null
+      - 'Python': null
+      - 'Bash': null
+      - 'Groovy': null
+  - i18n: ['Platforms', 'Környezetek']
+    value:
+      - i18n: ['Linux(mainly Debian, Ubuntu, Mint)', 'Linux(főleg Debian, Ubuntu, Mint)']
+        value: null
+  - i18n: ['Build tools', 'Build eszközök']
+    value:
+      - Gradle: 'https://gradle.org/'
+      - SCons: 'http://scons.org/'
+      - CMake: 'https://cmake.org/'
+  - i18n: ['Devops tools', 'Devops eszközök']
+    value:
+      - Docker: 'http://www.docker.com'
+      - Jenkins: 'https://jenkins.io/'
+      - Salt: 'https://docs.saltstack.com/en/latest/'
+      - Fabric: 'http://www.fabfile.org/'
+      - Git-annex: 'https://git-annex.branchable.com/'
+      - Gitolite: 'http://gitolite.com/gitolite/'
+  - i18n: ['IDEs', 'IDE-k']
+    value:
+      - Eclipse: null
+      - NetBeans: null
+  - i18n: ['Test tools', 'Teszt eszközök']
+    value:
+      - JUnit: 'https://github.com/junit-team/junit4'
+      - Googletest: 'https://github.com/google/googletest'
+      - Pytest: 'http://doc.pytest.org/en/latest/'
+  - Web:
+    - Bottle: 'http://bottlepy.org'
+    - WebSocket: 'https://en.wikipedia.org/wiki/WebSocket'
+    - Tomcat: 'http://tomcat.apache.org/'
+    - JavaScript: null
+    - Html: null
+  - i18n: ['Miscellaneous', 'Vegyes']
+    value:
+      - Fuse: 'https://en.wikipedia.org/wiki/Filesystem_in_Userspace'
+      - Jinja2: 'http://jinja.pocoo.org/docs/dev/'
+      - Yaml: 'http://yaml.org/'
 education:
   section_name: {i18n: ['Education', 'Tanulmányok']}
   periods:
@@ -170,4 +191,4 @@ languages:
     - i18n: ['hungarian', 'magyar']
       value: {i18n: ['native', 'anyanyelv']}
     - i18n: ['english', 'angol']
-      value: {i18n: ['intermediate', 'középfokú']}
+      value: {i18n: ['advanced', 'középfokú']}

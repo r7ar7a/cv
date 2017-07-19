@@ -53,21 +53,6 @@
 \cvline{LinkedIn}{\small \url{https://hu.linkedin.com/pub/andr\%C3\%A1s-radnai/b3/808/53b}\normalsize}
 
 
-\section{{ '{' ~ computer_skills.section_name ~ '}' }}
-{%- for category_dict in computer_skills.categories %} {%- for category, item_list in category_dict.items() %}
-  \cvline{{'{' ~ category ~ '}{'}}%
-  {%- set comma = joiner(", ") %}
-  {%- for item_dict in item_list %} {%- for item, href in item_dict.items() %}
-    {{ comma() }}
-    {%- if href -%}
-      \href{{'{' ~ href ~ '}'}}{{'{' ~ item ~ '}'}}%
-    {%- else -%}
-      {{item}}%
-    {%- endif -%}
-  {%- endfor %}{% endfor %}
-  }
-{%- endfor %}{% endfor %}
-
 \section{{ '{' ~ work_experience.section_name ~ '}' }}
 {%- for job in work_experience.jobs %}
   \cventry{{'{' ~ job.desc.date ~ '}{' ~ job.desc.job ~ '}{' ~
@@ -86,6 +71,21 @@
   {%- endfor %}{% endfor %}
   }
 {%- endfor %}
+
+\section{{ '{' ~ computer_skills.section_name ~ '}' }}
+{%- for category_dict in computer_skills.categories %} {%- for category, item_list in category_dict.items() %}
+  \cvline{{'{' ~ category ~ '}{'}}%
+  {%- set comma = joiner(", ") %}
+  {%- for item_dict in item_list %} {%- for item, href in item_dict.items() %}
+    {{ comma() }}
+    {%- if href -%}
+      \href{{'{' ~ href ~ '}'}}{{'{' ~ item ~ '}'}}%
+    {%- else -%}
+      {{item}}%
+    {%- endif -%}
+  {%- endfor %}{% endfor %}
+  }
+{%- endfor %}{% endfor %}
 
 \section{{ '{' ~ education.section_name ~ '}' }}
 {%- for period in education.periods %}

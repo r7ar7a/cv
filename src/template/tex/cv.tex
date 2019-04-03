@@ -92,12 +92,15 @@
   \cventry{{'{' ~ period.date ~ '}{' ~ period.degree ~ '}{' ~ period.institution ~ '}{' ~ period.department ~ '}{}{' ~ period.desc|default('') ~ '}'}}
 {%- endfor %}
 
+
+{%- if publications is defined %}
 \section{{ '{' ~ publications.section_name ~ '}' }}
 {%- for publication in publications.publications %}
   \cvline{{'{}{' ~ publication.authors|join(',') ~ ':\n\\emph{' ~ publication.title ~ '} \\newline%\n' ~
       publication.conference}}
   }
 {%- endfor %}
+{%- endif %}
 
 %Section
 \section{{ '{' ~ languages.section_name ~ '}' }}

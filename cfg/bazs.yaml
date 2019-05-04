@@ -1,0 +1,117 @@
+langs:
+  - en
+  - hu
+versions:
+  bazs_hu: {lang: 'hu', pc: False}
+  bazs_en: {lang: 'en', pc: False}
+  bazs_en_pc: {lang: 'en', pc: True}
+personal:
+  firstname: ['Balázs']
+  familyname: ['Radnai']
+  address: ['Hatvany Lajos utca 6', '1039 Budapest', {i18n: ['Hungary', 'Magyarország']}]
+  mobile: ['+36 20 251 80 40']
+  phone: null
+  email: ['radnaibalazs825@gmail.com']
+  quote: null
+
+work_experience:
+  section_name: {i18n:['Working Experience', 'Szakmai tapasztalat']}
+  jobs:
+    - desc:
+        company: 'Info-m kft.'
+        group: ''
+        job: {i18n: ['Software developer, Hardware engineers', 'Szoftver fejlesztő, hardvermérnök']}
+        date: '2015 -'
+      projects:
+        - PetrolStation:
+            date: '2015 -'
+            desc: 
+              i18n:
+                - 'TODO'
+                - 'PIC, XC32, '
+            details:
+              - i18n:
+                - 'TODO'
+                - 'TODO'
+        - 'KING ServerRoom':
+            date: '2017 -'
+            desc: 
+              i18n:
+                - 'TODO'
+                - 'c++ typescript PaperJs'
+            details:
+              - i18n:
+                - 'TODO'
+                - 'TODO'
+        - 'KING NetworkServices':
+            date: '2018 -'
+            desc:
+              i18n:
+                - 'TODO'
+                - 'c++ typescript'
+            details:
+              - i18n:
+                - 'TODO'
+                - 'TODO'
+    - desc:
+        company: 'Innotica kft.'
+        group: ''
+        job: {i18n: ['Java developer', 'Java fejlesztő']}
+        date: '2011'
+      projects:
+        - Interactive Map:
+            date: '2011'
+            desc: 
+              i18n:
+                - 'TODO'
+                - 'TODO'
+            details:
+              - i18n:
+                - 'TODO'
+                - 'TODO'
+computer_skills:
+  section_name: {i18n: ['Computer Skills', 'Szakmai Kompetencia']}
+  categories:
+  - i18n: ['Languages', 'Nyelvek']
+    value:
+      - '\textbf{C,C++}': null
+      - 'Java': null
+      - 'Python': null
+  - Web:
+    - TypeScript: null
+    - Html: null  
+  - i18n: ['Platforms', 'Környezetek']
+    value:
+      - i18n: ['Windows', 'Windows']
+        value: null
+  - i18n: ['Devops tools', 'Devops eszközök']
+    value:
+      - Perforce: 'https://www.perforce.com/'
+  - i18n: ['IDEs', 'IDE-k']
+    value:
+      - Eclipse: null
+      - NetBeans: null
+      - MPLabX: null
+      - Visual Studio: null
+      - Visual Studio Code: null  
+  - i18n: ['Miscellaneous', 'Vegyes']
+    value:
+      - UnrealEngine 4: null
+education:
+  section_name: {i18n: ['Education', 'Tanulmányok']}
+  periods:
+    - institution: {i18n: ['Budapest University of Technology and Economics', 'Budapesti Műszaki és Gazdaságtudományi Egyetem']}
+      degree: {i18n: ['Bachelor of Science(BSc), Computer Science', 'Bachelor of Science(BSc), Mérnök Informatikus']}
+      department: {i18n: ['Department of Automation and Applied Informatics', 'Automatizálási és Alkalmazott Informatikai Tanszék']}
+      date: '2012 - 2016'
+    - institution: {i18n: ['Fazekas Mihály Grammar School', 'Fazekas Mihály Gimnázium']}
+      degree: {i18n: ['High school diploma', 'Érettségi']}
+      department: {i18n: ['Branch of mathematics', 'Speciális matematika tagozat']}
+      date: '2008 - 2012'
+languages:
+  section_name: {i18n:['Languages', 'Nyelvek']}
+  languages:
+    - i18n: ['hungarian', 'magyar']
+      value: {i18n: ['native', 'anyanyelv']}
+    - i18n: ['english', 'angol']
+      value: {i18n: ['advanced', 'középfokú']}

@@ -31,17 +31,17 @@ work_experience:
         - Gitential:
             date: '2016 -'
             desc: 
-              'Gitential is a tool that aims to give insights into the performance of developer teams.'
+              'Gitential is a service that aims to give insights about the performance of developer teams.'
             details:
-              - 'Finding of objective and meaningful statistics of developer teams based on the produced code basis.'
-              - 'Creation of graphs, so the causes of performance issues can be easily interpreted by non-technical users.'
+              - 'Development of complex metrics for describing development processes and team dynamics.' 
+              - 'Creation of descriptive graphs which help non-technical users to understand the causes of performance issues.'
         - Lensa:
-            date: '2016 - 2017'
+            date: '2016 -'
             desc: 
-              'Lensa is a quickly growing job recommendation system for the job Market of the US.'
+              'Lensa is a quickly growing job recommendation system for the job market of the US.'
             details:
               - 'Construction of good quality similarity measurement for job descriptions.'
-              - 'Optimization of algorithms so they can select the relevant jobs for a user in milliseconds from 50 million possibility.'
+              - 'Optimization of algorithms to achieve millisecond respond times while selecting relevant jobs from 50 million possibilities.'
     - desc:
         company: 'Rapidminer'
         group: ''

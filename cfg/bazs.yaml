@@ -9,50 +9,69 @@ personal:
   firstname: ['Balázs']
   familyname: ['Radnai']
   address: ['Hatvany Lajos utca 6', '1039 Budapest', {i18n: ['Hungary', 'Magyarország']}]
-  mobile: ['+36 20 251 80 40']
+  mobile: ['+36 30 286 52 32']
   phone: null
   email: ['radnaibalazs825@gmail.com']
   quote: null
+
+info:
+  birth: xxx
+  citizenship: xxx
+  linkedin: xxx
+  image_path: bazs.png
 
 work_experience:
   section_name: {i18n:['Working Experience', 'Szakmai tapasztalat']}
   jobs:
     - desc:
-        company: 'Info-m kft.'
+        company: 'Info-M Kft.'
         group: ''
-        job: {i18n: ['Software developer, Hardware engineers', 'Szoftver fejlesztő, hardvermérnök']}
+        job: {i18n: ['Software developer', 'Szoftver fejlesztő']}
         date: '2015 -'
+        link: http://www.info-m.hu/referenciak.html
       projects:
-        - PetrolStation:
+        - i18n: ['PetrolStation', 'Benzinkút']
+          value:
             date: '2015 -'
             desc: 
               i18n:
-                - 'TODO'
-                - 'PIC, XC32, '
+                - 'Developing a PCB to control, measure and communicate on private petrol stations.'
+                - 'Nyomtatott áramkör tervezése privát benzinkutak vezérlésére, mérésre és kommunikációra'
             details:
               - i18n:
-                - 'TODO'
-                - 'TODO'
-        - 'KING ServerRoom':
-            date: '2017 -'
+                - 'Moduls: Card reader, GSM, Display, Keypad, FuelTank, Fueling Pistol...'
+                - 'Modulok: Kártya olvasó, GSM, Kijelző, Billentyűzet, Tartály, Pisztoly...'
+        - KING Python interpreter:
+            date: '2017 - 2018'
             desc: 
               i18n:
-                - 'TODO'
-                - 'c++ typescript PaperJs'
+                - 'Embedding a Python interpreter into the KING system.'
+                - 'Python interpreter beágyazása a KING rendszerébe.'
             details:
               - i18n:
-                - 'TODO'
-                - 'TODO'
-        - 'KING NetworkServices':
+                - 'Create interface to access KING data and to display result on the clients.'
+                - 'Interface létrehozása KING adatok hozzáféréséhez és az eredmények megjelenítéséhez.'
+        - i18n: ['KING Contractor interface', 'KING Kivitelezői felület']
+          value:
+            date: '2018 -'
+            desc: 
+              i18n:
+                - 'Developing an Interface for handling external projects.'
+                - 'Felület fejlesztés a külsős cégenknek kiadott feladatok kezeléséhez.'
+        - i18n: ['KING computer room','KING gépterem']
+          value:
+            date:  '2017 -'
+            desc: 
+              i18n:
+                - 'Developing a PaperJs based interface for managing placing informations about servers, cabels, obstacles, etc. on floor plans of buildings.'
+                - 'PaperJS alapú felület fejlesztése épületeken belüli szerverek, kábelek, akadályok stb.. elhelyezésének kezelésére.'
+        - i18n: ['KING Network service','KING hálózat szolgáltatás']
+          value:
             date: '2018 -'
             desc:
               i18n:
-                - 'TODO'
-                - 'c++ typescript'
-            details:
-              - i18n:
-                - 'TODO'
-                - 'TODO'
+                - 'Template based service automatization in the KING system.'
+                - 'Template alapú szervíz automatizálás fejlesztése a KING rendszerbe.'
     - desc:
         company: 'Innotica kft.'
         group: ''
@@ -63,12 +82,8 @@ work_experience:
             date: '2011'
             desc: 
               i18n:
-                - 'TODO'
-                - 'TODO'
-            details:
-              - i18n:
-                - 'TODO'
-                - 'TODO'
+                - 'Interactive map application for the Szaléziánum Museum.'
+                - 'Interaktív Térképes alkalmazás a Szaléziánum múzeumnak.'
 computer_skills:
   section_name: {i18n: ['Computer Skills', 'Szakmai Kompetencia']}
   categories:
@@ -87,6 +102,11 @@ computer_skills:
   - i18n: ['Devops tools', 'Devops eszközök']
     value:
       - Perforce: 'https://www.perforce.com/'
+  - Hardware:
+    - SPI bus: null
+    - RS485: null 
+    - RS232: null
+    - Analog/Digital: null 
   - i18n: ['IDEs', 'IDE-k']
     value:
       - Eclipse: null

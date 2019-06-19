@@ -13,6 +13,11 @@ personal:
   phone: null
   email: ['r7ar7a@gmail.com']
   quote: null
+info:
+  birth: November 20, 1988 (Budapest)
+  citizenship: Hungarian
+  linkedin: https://hu.linkedin.com/pub/andr\%C3\%A1s-radnai/b3/808/53b
+  image_path: jokepkicsi.jpg
 
 work_experience:
   section_name: {i18n:['Working Experience', 'Szakmai tapasztalat']}

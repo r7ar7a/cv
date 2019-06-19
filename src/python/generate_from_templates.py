@@ -37,6 +37,8 @@ def main():
     lang_index = cfg['langs'].index(version['lang'])
     select_lang(cfg, lang_index)
     cfg['pc'] = version['pc']
+    import pprint
+    pprint.pprint(cfg)
 
     try:
       os.makedirs(os.path.join(to_dir, 'tex'))

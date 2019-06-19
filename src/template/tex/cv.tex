@@ -32,7 +32,7 @@
   {% endif -%}
 {% endfor %}
 {% if not pc %}
-  \photo[84pt]{jokepkicsi.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+  \photo[84pt]{{'{' ~ info.image_path ~ '}'}}   % '64pt' is the height the picture must be resized to
 {% endif %}
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -47,10 +47,10 @@
 %Section
 \section{Info}
 {% if not pc %}
-  \cvline{Birth}{\small November 20, 1988 (Budapest)\normalsize}
+  \cvline{Birth}{\small {{info.birth}}\normalsize}
 {% endif %}
-\cvline{Citizenship}{\small Hungarian\normalsize}
-\cvline{LinkedIn}{\small \url{https://hu.linkedin.com/pub/andr\%C3\%A1s-radnai/b3/808/53b}\normalsize}
+\cvline{Citizenship}{\small {{info.citizenship}}\normalsize}
+\cvline{LinkedIn}{\small \url{{ '{' ~ info.linkedin ~ '}'}}\normalsize}
 
 
 \section{{ '{' ~ work_experience.section_name ~ '}' }}

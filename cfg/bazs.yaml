@@ -2,29 +2,43 @@ langs:
   - en
   - hu
 versions:
-  bazs_hu: {lang: 'hu', pc: False}
-  bazs_en: {lang: 'en', pc: False}
-  bazs_en_pc: {lang: 'en', pc: True}
+  bazs_hu:          {lang: 'hu', pc: False}
+  bazs_en:          {lang: 'en', pc: False}
+  bazs_en_casual:   {lang: 'en', pc: False, theme: casual}
+  bazs_en_banking:  {lang: 'en', pc: False, theme: banking}
+  bazs_en_oldstyle: {lang: 'en', pc: False, theme: oldstyle}
+  bazs_en_fancy:    {lang: 'en', pc: False, theme: fancy}
+  bazs_en_pc:       {lang: 'en', pc: True}
+theme: classic  # casual, classic, banking, oldstyle and fancy
 personal:
-  firstname: ['Balázs']
-  familyname: ['Radnai']
+  title: null
+  name:
+    i18n:
+    - ['Balázs', 'Radnai']
+    - ['Radnai', 'Balázs']
   address: ['Hatvany Lajos utca 6', '1039 Budapest', {i18n: ['Hungary', 'Magyarország']}]
   mobile: ['+36 30 286 52 32']
   phone: null
+  fax: null
   email: ['radnaibalazs825@gmail.com']
+  'social[linkedin]': ['balazsradnai']
   quote: null
+  homepage: null
+  'social[twitter]': null
+  'social[github]': null
+  extrainfo: null
+  # extrainfo: ['Total ratyi vagyok']
 
 info:
-  birth: xxx
-  citizenship: xxx
-  linkedin: xxx
+  birth: '1993.08.25'
+  citizenship: {i18n:['Hungarian', 'Magyar']}
   image_path: bazs.png
 
 work_experience:
   section_name: {i18n:['Working Experience', 'Szakmai tapasztalat']}
   jobs:
     - desc:
-        company: 'Info-M Kft.'
+        company: 'Info-M Kft'
         group: ''
         job: {i18n: ['Software developer', 'Szoftver fejlesztő']}
         date: '2015 -'
@@ -35,43 +49,43 @@ work_experience:
             date: '2015 -'
             desc: 
               i18n:
-                - 'Developing a PCB to control, measure and communicate on private petrol stations.'
-                - 'Nyomtatott áramkör tervezése privát benzinkutak vezérlésére, mérésre és kommunikációra'
+                - 'Designing and Developing a PCB to control petrol stations.'
+                - 'Nyomtatott áramkör tervezése és fejlesztése benzinkutak vezérlésére'
             details:
               - i18n:
-                - 'Moduls: Card reader, GSM, Display, Keypad, FuelTank, Fueling Pistol...'
-                - 'Modulok: Kártya olvasó, GSM, Kijelző, Billentyűzet, Tartály, Pisztoly...'
-        - KING Python interpreter:
+                - 'Moduls: Card reader, GSM, Display, Keypad, FuelTank, Fueling Pistol, thermometer...'
+                - 'Modulok: Kártya olvasó, GSM, Kijelző, Billentyűzet, Tartály, Pisztoly, hőmérő...'
+        - Python interpreter:
             date: '2017 - 2018'
             desc: 
               i18n:
-                - 'Embedding a Python interpreter into the KING system.'
-                - 'Python interpreter beágyazása a KING rendszerébe.'
+                - 'Embedding a Python interpreter into the system.'
+                - 'Python interpreter beágyazása a rendszerébe.'
             details:
               - i18n:
-                - 'Create interface to access KING data and to display result on the clients.'
-                - 'Interface létrehozása KING adatok hozzáféréséhez és az eredmények megjelenítéséhez.'
-        - i18n: ['KING Contractor interface', 'KING Kivitelezői felület']
+                - 'Create interface to access data and to display result on the clients.'
+                - 'Interface létrehozása adatok hozzáféréséhez és az eredmények megjelenítéséhez.'
+        - i18n: ['Contractor interface', 'Kivitelezői felület']
           value:
             date: '2018 -'
             desc: 
               i18n:
                 - 'Developing an Interface for handling external projects.'
-                - 'Felület fejlesztés a külsős cégenknek kiadott feladatok kezeléséhez.'
-        - i18n: ['KING computer room','KING gépterem']
+                - 'Felület fejlesztése a külsős cégenknek kiadott feladatok kezeléséhez.'
+        - i18n: ['computer room','gépterem']
           value:
-            date:  '2017 -'
+            date:  '2017 - 2018'
             desc: 
               i18n:
                 - 'Developing a PaperJs based interface for managing placing informations about servers, cabels, obstacles, etc. on floor plans of buildings.'
-                - 'PaperJS alapú felület fejlesztése épületeken belüli szerverek, kábelek, akadályok stb.. elhelyezésének kezelésére.'
-        - i18n: ['KING Network service','KING hálózat szolgáltatás']
+                - 'PaperJS alapú felület fejlesztése, épületeken belüli szerverek, kábelek, akadályok stb.. elhelyezésének kezelésére.'
+        - i18n: ['Network service','hálózati szolgáltatás']
           value:
             date: '2018 -'
             desc:
               i18n:
-                - 'Template based service automatization in the KING system.'
-                - 'Template alapú szervíz automatizálás fejlesztése a KING rendszerbe.'
+                - 'Developing a template based service automatization system.'
+                - 'Template alapú szolgáltatás automatizálás fejlesztése.'
     - desc:
         company: 'Innotica kft.'
         group: ''
@@ -84,39 +98,6 @@ work_experience:
               i18n:
                 - 'Interactive map application for the Szaléziánum Museum.'
                 - 'Interaktív Térképes alkalmazás a Szaléziánum múzeumnak.'
-computer_skills:
-  section_name: {i18n: ['Computer Skills', 'Szakmai Kompetencia']}
-  categories:
-  - i18n: ['Languages', 'Nyelvek']
-    value:
-      - '\textbf{C,C++}': null
-      - 'Java': null
-      - 'Python': null
-  - Web:
-    - TypeScript: null
-    - Html: null  
-  - i18n: ['Platforms', 'Környezetek']
-    value:
-      - i18n: ['Windows', 'Windows']
-        value: null
-  - i18n: ['Devops tools', 'Devops eszközök']
-    value:
-      - Perforce: 'https://www.perforce.com/'
-  - Hardware:
-    - SPI bus: null
-    - RS485: null 
-    - RS232: null
-    - Analog/Digital: null 
-  - i18n: ['IDEs', 'IDE-k']
-    value:
-      - Eclipse: null
-      - NetBeans: null
-      - MPLabX: null
-      - Visual Studio: null
-      - Visual Studio Code: null  
-  - i18n: ['Miscellaneous', 'Vegyes']
-    value:
-      - UnrealEngine 4: null
 education:
   section_name: {i18n: ['Education', 'Tanulmányok']}
   periods:
@@ -128,6 +109,25 @@ education:
       degree: {i18n: ['High school diploma', 'Érettségi']}
       department: {i18n: ['Branch of mathematics', 'Speciális matematika tagozat']}
       date: '2008 - 2012'
+computer_skills:
+  section_name: {i18n: ['Skills', 'Szakértelem']}
+  categories:
+  - i18n: ['Languages', 'Nyelvek']
+    value:
+      - '\textbf{C,C++}': null
+      - 'Java': null
+      - 'TypeScript': null
+      - 'Python': null
+  - i18n: ['IDEs', 'IDE-k']
+    value:
+      - Eclipse: null
+      - NetBeans: null
+      - MPLabX: null
+      - Visual Studio: null
+      - Visual Studio Code: null  
+  - i18n: ['Miscellaneous', 'Egyéb']
+    value:
+      - UnrealEngine 4: null
 languages:
   section_name: {i18n:['Languages', 'Nyelvek']}
   languages:

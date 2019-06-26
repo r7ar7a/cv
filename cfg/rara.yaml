@@ -1,6 +1,7 @@
 langs:
   - en
   - hu
+theme: classic  # casual, classic, banking, oldstyle and fancy
 versions:
   hu: {lang: 'hu', pc: False}
   en: {lang: 'en', pc: False}

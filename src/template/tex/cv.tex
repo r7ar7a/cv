@@ -10,7 +10,7 @@
 
 % moderncv themes
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[blue]{classic}                % idem
+\moderncvtheme[blue]{{'{' ~ theme | default('classic') ~ '}'}}                % idem
 
 \usepackage[T1]{fontenc}
 % character encoding
@@ -50,7 +50,10 @@
   \cvline{Birth}{\small {{info.birth}}\normalsize}
 {% endif %}
 \cvline{Citizenship}{\small {{info.citizenship}}\normalsize}
-\cvline{LinkedIn}{\small \url{{ '{' ~ info.linkedin ~ '}'}}\normalsize}
+
+{%- if 'linkedin' in info  %}
+  \cvline{LinkedIn}{\small \url{{ '{' ~ info.linkedin ~ '}'}}\normalsize}
+{%- endif %}
 
 
 \section{{ '{' ~ work_experience.section_name ~ '}' }}

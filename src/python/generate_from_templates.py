@@ -36,7 +36,7 @@ def main():
     cfg = deepcopy(orig_cfg)
     lang_index = cfg['langs'].index(version['lang'])
     select_lang(cfg, lang_index)
-    cfg['pc'] = version['pc']
+    cfg.update(version)
     import pprint
     pprint.pprint(cfg)
 

@@ -3,9 +3,9 @@
 this_dir="$(dirname "$0")"
 . "$this_dir/functions.sh"
 
+source_dir="$1"
 root_dir="$this_dir/../../"
 resource_dir="$root_dir/src/resources"
-source_dir="$root_dir/bin/generated"
 target_dir="$root_dir/bin"
 pdf_target_dir="$target_dir/pdf"
 
